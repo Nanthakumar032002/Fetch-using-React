@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(135deg, #74ebd5, #9face6); */
+  background-color: black;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main App container */
+.App {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 30px;
+ }
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem; /* Smaller font size for compact design */
+}
+
+thead th {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  text-align: left;
+  padding: 8px; /* Reduced padding */
+  border-radius: 8px 8px 0 0;
+}
+
+tbody td, tfoot td {
+  border-bottom: 1px solid #eee;
+}
+
+tfoot td {
+  padding: 10px; /* Slightly larger padding for footer */
+}
+
+/* Editable text field */
+.bp4-editable-text {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.bp4-editable-text:hover {
+  border-color: #00f2fe;
+}
+
+/* Buttons styling */
+button, .bp4-button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px; /* Compact button padding */
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button.bp4-button.bp4-intent-primary {
+  background: linear-gradient(90deg, #56ccf2, #2f80ed);
+  color: #fff;
+}
+
+button.bp4-button.bp4-intent-danger {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  color: #fff;
+}
+
+button.bp4-button.bp4-intent-success {
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  color: #fff;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Input fields styling */
+.bp4-input {
+  width: 100%;
+  padding: 8px 10px; /* Reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.bp4-input:focus {
+  border-color: #56ccf2;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  button, .bp4-button {
+    font-size: 0.8rem;
+    padding: 6px 10px; /* Smaller padding for buttons */
+  }
+
+  .App {
+    padding: 8px; /* Adjust padding for smaller devices */
+  }
+}
